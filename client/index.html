@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Buscar Discos</h1>
+        <form method="GET" action="/discos">
+            <div class="form-grupo">
+                <label for="titulo">Titulo:</label>
+                <input type="text" class="form-input" id="titulo">
+            </div>
+            <div class="form-grupo">
+                <label for="artista">Artista:</label>
+                <input type="text" class="form-input" id="artista">
+            </div>
+            <div class="form-grupo">
+                <label for="lanzamiento">Año de Lanzamiento:</label>
+                <input type="number" min="1930" max="2021" class="form-input" id="lanzamiento">
+            </div>
+
+            <button class="btn-submit" id="btn-submit">Buscar</button>
+        </form>
+        
+        <div class="contenedor-tarjetas"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
